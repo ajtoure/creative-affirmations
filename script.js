@@ -15,23 +15,24 @@ console.log(newAff);
 console.log(newAff.userName)
 //2. program randomly selects quote from list
 let quotes = [
-    //array of empty quotes which will use template literals to plug in the user's input and generate new affirmations
+    //array of empty quotes 
+    //EXTRA: which will use template literals to plug in the user's input and generate new affirmations
     `Every day in every way I'm getting better and better`,
     `Everything I need is coming to me easily and effortlessly`,
     `I have everything I need to enjoy my here and now`,
     `I am the master of my life`,
     `Everything I need is already within me`,
 
-    `Perfect ${noun} is in my heart`,
+    `Perfect wisdom is in my heart`,
     `I am whole and complete in myself`,
     `I love and appreciate myself just as I am`,
     `I accept all my feelings as part of me`,
     `I love to love and be loved`,
     `The more I love myself, the more love I have to give others`,
-    `I now give and receive ${noun} freely`,
+    `I now give and receive love freely`,
     `I am attracting loving, satisfying relationships into my life`,
     `My relationship with my loved one is growing happier and more fulfilling every day`,
-    `I now have a perfect, satisfying ${noun}`,
+    `I now have a perfect, satisfying occupation`,
     `I love doing my work, and I am richly rewarded, creatively and financially`,
     `I am an open channel of creative energy`,
     `I am dynamically self-expressive`,
@@ -56,12 +57,17 @@ let quotes = [
     `I recognize, accept, and follow the divine plan of my life as it is revealed to me step by step`
 ]
 
-let suggestNoun = [
-    'wisdom', 'love',
-]
 
 //A function will randomly select the affirmation array from the quotes
-//A function will plug in the data from the input object into the chosen array and store it in a variable called "affirmation"
+
+const randomizeQuote = array => {
+    let newQuote = array[Math.floor(Math.random() * array.length)];
+    return newQuote;
+}
+
+console.log(randomizeQuote(quotes));
+
+//EXTRA: A function will plug in the data from the input object into the chosen array and store it in a variable called "affirmation"
 //3. The affirmation variable will print in the visual console of the page
 //4. a reset button will appear to put everything back to zero
 
