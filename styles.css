@@ -4,7 +4,26 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
+/*GENERAL STYLES*/
 
+body {
+    font-family: 'Roboto Mono', monospace;
+    padding: 0 40px;
+}
+
+header {
+    display: flex;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+}
 
 .challenge {
     text-decoration: line-through;
