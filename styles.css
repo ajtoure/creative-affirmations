@@ -12,19 +12,58 @@ body {
 }
 
 header {
+    padding: 20px 0;
     display: flex;
+    justify-content: space-between;
+    border-bottom: 1px black solid;
 }
 
-ul {
+h1 {
+    margin: 0;
+}
+
+h3 {
+    font-size: .75rem;
+}
+
+.header-titles {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: baseline;
+}
+
+.header-nav-list li {
+    padding: 10px 0px 10px 20px;
+    list-style: none;
+}
+
+.header-nav-list {
     padding: 0;
     margin: 0;
     display: flex;
-}
-
-ul li {
-    list-style: none;
+    align-content: flex-end;
+    margin-top: auto;
 }
 
 .challenge {
     text-decoration: line-through;
+}
+
+form {
+    padding: 40px 0;
+}
+
+.console {
+    line-height: 2;
+}
+
+footer {
+    margin: 20px 0 0 0;
+    position: absolute;
+    bottom: 0;
+    height: 40px;
 }
