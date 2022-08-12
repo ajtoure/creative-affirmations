@@ -92,6 +92,12 @@ app.logOutput = function(){
     })
 }
 
+app.clearInput = () => {
+    if(app.form.value){
+        window.location.reload();
+    }
+}
+
 app.init = () => {
     app.newQuote = app.randomizeQuote(app.quotes);
     app.newNumb = app.randomizeNumber(app.angelNumbers);

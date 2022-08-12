@@ -12,12 +12,12 @@
 </head>
 <body>
     <header>
-        <div>
-           <h1>iAffirm</h1>
+        <div class="header-titles">
+            <h1>iAffirm</h1>
             <h3>The definitive generator of powerful and divine personal affirmations</h3> 
         </div>
-        <nav>
-            <ul>
+        <nav class="header-nav">
+            <ul class="header-nav-list">
                 <li>About</li>
                 <li>Contact</li>
             </ul>
@@ -29,7 +29,21 @@
             <input type="text" id="userName">
             <label for="challenge">What is challenging you right now?</label>
             <!--Text input for -->
-            <input type="text" id="challenge">
+            <select name="challenge" id="challenge">
+                <option value="challenges" selected>Choose a challenge</option>
+                <option value="future">The Future</option>
+                <option value="finance">Finances</option>
+                <option value="love">Love</option>
+                <option value="relationships">Relationships</option>
+                <option value="community">Community</option>
+                <option value="spiritual">Spiritual Health</option>
+                <option value="healing">Healing</option>
+                <option value="stateofaffairs">The State of the World</option>
+                <option value="physical">Physical Health</option>
+                <option value="creative">Creative Blocks</option>
+                <option value="toxic">Toxic Bonds or Attachments</option>
+                <option value="career">Career</option>
+            </select>
             <input type="submit" value="Submit">
         </form>
         <div class="console">
